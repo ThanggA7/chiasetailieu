@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Pannel</title>
+  <!-- Thêm đường dẫn tới các file CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Admin Control</h1>
+
+    <form id="file-upload-form">
+      <div class="form-group">
+        <label for="input-truong">Môn:</label>
+        <input type="text" class="form-control" id="input-truong">
+      </div>
+      <div class="form-group">
+        <label for="input-subject">Subject:</label>
+        <input type="text" class="form-control" id="input-subject">
+      </div>
+      <div class="form-group">
+        <label for="file-input">Choose File:</label>
+        <input type="file" class="form-control-file" id="file-input">
+      </div>
+      <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>Môn</th>
+          <th>Date</th>
+          <th>File</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Dynamic content will be added here -->
+      </tbody>
+    </table>
+
+    <div id="result"></div>
+  </div>
+
+  <!-- Thêm đường dẫn tới các file JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

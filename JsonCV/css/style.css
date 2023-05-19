@@ -1,0 +1,123 @@
+.sidebar::before {
+  content: "{ }";
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+  left: 0;
+  margin-top: 35px;
+  margin-left: 30px;
+  color: green;
+  padding: 5px;
+  transform: translate(-50%, -50%);
+}
+
+.sidebar {
+  background-color: #343a40;
+  color: #fff;
+  height: 100vh;
+  flex: 0 0 250px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.main-content {
+  background-color: #f8f9fa;
+  padding: 20px;
+  height: 100vh;
+}
+
+.tab-content {
+  height: 100%;
+}
+
+.content {
+  display: none;
+}
+
+.content.show {
+  display: block;
+}
+
+/* Styles for small screens */
+/* Styles for small screens */
+@media (max-width: 767px) {
+  .sidebar {
+    flex: 0 0 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .sidebar::before {
+    content: "";
+    display: none;
+  }
+
+  .main-content {
+    height: auto;
+  }
+
+  .nav-pills .nav-link {
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    flex: 0 0 200px;
+  }
+}
+
+/* Styles for large screens */
+@media (min-width: 992px) {
+  .sidebar {
+    flex: 0 0 250px;
+  }
+}
+/* CSS for the table */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.content th,
+.content td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.content th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .content table {
+    font-size: 40px;
+  }
+}
