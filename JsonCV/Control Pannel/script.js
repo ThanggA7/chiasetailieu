@@ -12,7 +12,7 @@ $(document).ready(function() {
       reader.onload = function(e) {
         var content = e.target.result;
 
-        var accessToken = "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"; // Thay YOUR_ACCESS_TOKEN bằng Access Token của bạn
+        var accessToken = ""; // Thay YOUR_ACCESS_TOKEN bằng Access Token của bạn
         var owner = "ThanggA7"; // Thay YOUR_GITHUB_USERNAME bằng tên người dùng GitHub của bạn
         var repo = "Sharetailieu"; // Thay YOUR_REPO_NAME bằng tên kho lưu trữ GitHub của bạn
 
